@@ -39,7 +39,7 @@ LOG = configure_log()
 EXTENSION = '.mov'
 
 def run_command(command):
-    'Return the return code of the command'
+    'Return the process object after wait call on shell command'
     LOG.debug('Running command: %s', command)
     try:
         process = subprocess.Popen(command, shell=True)
