@@ -54,5 +54,5 @@ docs/_build/
 target/
 
 # video files
-.mov
-.MOV
+*.mov
+*.MOV
