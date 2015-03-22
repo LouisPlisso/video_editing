@@ -152,8 +152,8 @@ def create_parser():
                            action='store_true', default=False,
                            help='run as verbose mode')
     parser.add_argument('-d', '--delete', dest='delete_after', default=False,
-                        help=('delete intermediate files after completion'
-                              '(default Fallse)'))
+                        help=('delete intermediate files after completion '
+                              '(default False)'))
     parser.add_argument('-e', '--extension', dest='extension',
                         default=EXTENSION,
                         help='extension to use (default %s)' % EXTENSION)

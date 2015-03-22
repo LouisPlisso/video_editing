@@ -18,8 +18,8 @@ optional arguments:
                         run as quiet mode
   -v, --verbose         run as verbose mode
   -d DELETE_AFTER, --delete DELETE_AFTER
-                        delete intermediate files after completion(default
-                        Fallse)
+                        delete intermediate files after completion (default
+                        False)
   -e EXTENSION, --extension EXTENSION
                         extension to use (default .mov)
   -f DESC_FILE, --desc-file DESC_FILE
