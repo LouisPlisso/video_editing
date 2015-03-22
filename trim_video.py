@@ -53,7 +53,7 @@ def concat_interm_files(all_files, out_file, delete_after):
     list_file = tempfile.NamedTemporaryFile(prefix='list_file_', dir='.',
                                             suffix='.txt', delete=False)
     LOG.info('list file is: %s', list_file.name)
-    with open(list_file, 'w') as list_file_stream:
+    with open(list_file.name, 'w') as list_file_stream:
         for file_name in all_files:
             list_file_stream.write("file '%s'\n" % file_name)
     process = run_command('/usr/local/bin/ffmpeg -f concat -i %s -c copy -y %s'
